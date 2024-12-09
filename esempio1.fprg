@@ -21,7 +21,7 @@
             <input variable="valoreiniziale"/>
             <output expression="&quot;per quanto vuoi moltiplicare?&quot;" newline="True"/>
             <input variable="moltiplicaper"/>
-            <for variable="i" start="1" end="numericicli" direction="inc" step="1">
+            <for variable="i" start="2" end="numericicli" direction="inc" step="1">
                 <assign variable="valoreiniziale" expression="valoreiniziale * moltiplicaper"/>
             </for>
             <output expression="&quot;valore finale &quot; &amp; valoreiniziale" newline="True"/>
