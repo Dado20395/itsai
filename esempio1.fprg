@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="esempio1"/>
+        <attribute name="authors" value="ITS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-19 11:50:05 "/>
+        <attribute name="created" value="SVRTO0lUUy1QMjM7MjAyNC0xMS0xOTsiMTE6MjM6MDIgIjsxODkw"/>
+        <attribute name="edited" value="SVRTO0lUUy1QMjM7MjAyNC0xMS0xOTsiMTE6NTA6MDUgIjsxOzIwMDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numericicli" type="Integer" array="False" size=""/>
+            <declare name="valoreiniziale" type="Integer" array="False" size=""/>
+            <declare name="moltiplicaper" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Quanti cicli vuoi fare?&quot;" newline="True"/>
+            <input variable="numericicli"/>
+            <output expression="&quot;valore iniziale?&quot;" newline="True"/>
+            <input variable="valoreiniziale"/>
+            <output expression="&quot;per quanto vuoi moltiplicare?&quot;" newline="True"/>
+            <input variable="moltiplicaper"/>
+            <for variable="i" start="1" end="numericicli" direction="inc" step="1">
+                <assign variable="valoreiniziale" expression="valoreiniziale * moltiplicaper"/>
+            </for>
+            <output expression="&quot;valore finale &quot; &amp; valoreiniziale" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
